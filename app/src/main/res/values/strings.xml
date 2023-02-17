@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Vegan Checker</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_user">User</string>
+    <string name="nav_scan">Scan</string>
+    <string name="add_upload">New</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="search_bar"> What are you looking for? </string>
+
+    <string name="no_results"> No Product Found</string>
+    <string name="barcode_empty">Please enter the Product Barcode</string>
+
+    <string name="barcode_indb">This Product is already stored</string>
+    <string name="no_alterntives">No Alternatives Found</string>
+    <string name="vegan_result"> 100% Vegan</string>
+    <string name="likely_vegan_result"> Likely Vegan</string>
+    <string name="not_vegan_result"> 0% Vegan</string>
+
+    <string name="btn_search">Manually Enter</string>
+    <string name="btn_food">Food</string>
+    <string name="tv_thanks">Thank You for Uploading</string>
+
+    <string name="btn_alcohol">Alcohol</string>
+    <string name="tv_find"> Find Vegan Products </string>
+    <string name="tv_category">Select Product Category</string>
+
+
+    <string name="tv_products"> Products</string>
+    <string name="btn_cosmetics">Cosmetics</string>
+    <string name="btn_alternatives">View Vegan Alternatives</string>
+    <string name="free_result_limit">Free Search Limit Exceeded</string>
+    <string name="no_wifi">Please connect to the Internet</string>
+    <string name="no_db"> Database Error</string>
+    <string name="user_uploads">My Product Uploads</string>
+    <string name="tv_upload">Upload Product Details</string>
+    <string name="tv_result"> OR Enter Ingredients Here </string>
+    <string name="et_barcode">Enter Barcode</string>
+    <string name="btn_ingreds"> Upload Ingredients</string>
+    <string name="et_brand">Enter Brand Name </string>
+    <string name="et_pname">Enter Product Name</string>
+    <string name="tv_type">Select Product Type</string>
+
+    <string name="btn_continue">Continue</string>
+
+    <string name="contains_animal">Product contains Animal Ingredients</string>
+    <string name="insert_product">Product Successfully Added</string>
+    <string name ="delete_product">Product Successfully Removed</string>
+    <!-- Available From -->
+    <string name="cb_availablefrom">Where is this product available?</string>
+    <string name="dunnes">Dunnes Stores</string>
+    <string name="supervalu">Supervalu</string>
+    <string name="aldi">Aldi</string>
+    <string name="lidl">Lidl</string>
+    <string name="tesco">Tesco</string>
+    <string name="iceland">Iceland</string>
+    <string name="other">Other</string>
+    <string name="hol_bar">Holland &amp; Barrett</string>
+    <string name="specify">Please specify</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="vegan_symbol">Does this product carry the Vegan Symbol? </string>
+    <string name="please_choose">Please Choose an Option</string>
+    <string name="please_enter"> Please Enter the Required Field</string>
+    <string name = "btn_back">Back</string>
+    <string name = "btn_delete">Delete</string>
+    <string name="delete_help">Swipe Left to Delete Uploads</string>
+
+    <string name="btn_camera">Camera</string>
+    <string name="btn_gallery">Gallery</string>
+    <string name="choose_image">Choose Image From: </string>
+    <string name ="permission_denied">Please accept the Required Permissions</string>
+
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009933</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#33cc33</color>
+    <color name ="vegan_colour">#32a852</color>
+    <color name ="not_vegan_colour">#ff3333</color>
+    <color name="error_colour">#ff0000</color>
+    <color name="success_colour">#33cc33</color>
+    <color name ="colour_white">#ffffff</color>
+    <color name="view_colour">#b3b3b3</color>
+    <color name = "title_colour"> #666666</color>
+    <color name="ic_launcher_background">#008037</color>
+    <color name="likely_vegan_colour">#ffc107</color>
+</resources>

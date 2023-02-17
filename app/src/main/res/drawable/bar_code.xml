@@ -1,0 +1,22 @@
+<!-- Icon is made by Freepik from www.flaticon.com-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M30,91l30,0l0,-30l-60,0l0,60l30,0z"/>
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M30,391l-30,0l0,60l60,0l0,-30l-30,0z"/>
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M452,61l0,30l30,0l0,30l30,0l0,-60z"/>
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M482,421l-30,0l0,30l60,0l0,-60l-30,0z"/>
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M452,121h-90v120h-31V121h-30v120h-30V121h-90v120h-30V121h-30v120H90V121H60v120H0v30h60v120h30V271h31v120h30V271h30v120h90V271h30v120h30V271h31v120h90V271h60v-30h-60V121z"/>
+</vector>

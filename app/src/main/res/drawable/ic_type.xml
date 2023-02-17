@@ -1,0 +1,7 @@
+
+<!--Icon made by "https://www.flaticon.com/authors/freepik"from www.flaticon.com -->
+<vector android:height="30dp" android:viewportHeight="511.999"
+    android:viewportWidth="511.999" android:width="30dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#ffffff" android:pathData="M496.999,96.4H15c-8.284,0 -15,6.716 -15,15v289.199c0,8.284 6.716,15 15,15h481.999c8.284,0 15,-6.716 15,-15V111.4C511.999,103.116 505.283,96.4 496.999,96.4zM481.999,385.599H30V126.4h451.999V385.599z"/>
+    <path android:fillColor="#ffffff" android:pathData="M111.4,192.8c-8.284,0 -15,6.716 -15,15v96.4c0,8.284 6.716,15 15,15s15,-6.716 15,-15v-96.4C126.4,199.516 119.684,192.8 111.4,192.8z"/>
+</vector>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragmentContainer">
+<LinearLayout
+    android:id="@+id/layoutAlternatives"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/bottom_navigation"
+    android:orientation="vertical"
+    android:background="@color/colour_white"
+    >
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    app:title="@string/app_name"
+    app:titleMargin="16sp"
+    app:titleTextColor="@color/colorPrimary"
+    android:id="@+id/tbAlternatives"/>
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="3dp" />
+<!-- Third Party file used below:
+Lottie Animation File: Peas Playground of Lover,
+Itay Alon,
+https://lottiefiles.com/20587-peas-playground-of-love -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:background="@color/colour_white"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/lottie"
+        app:lottie_autoPlay="true"
+        android:visibility="gone"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/peas"
+        /> <!-- END-->
+
+    <!-- Third Party File used below:
+    Lottie Animation File: Beer,
+Charlotte Dupont,
+https://lottiefiles.com/10958-beer -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:background="@color/colour_white"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/lottieAlcohol"
+        android:visibility="gone"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/beer"
+        /> <!--END-->
+
+    <androidx.recyclerview.widget.RecyclerView
+android:translationZ="90dp"
+        android:id="@+id/rcAlternatives"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="50sp"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id ="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:elevation="4sp"
+        app:menu="@menu/bottom_navigation"
+        android:background ="?android:attr/windowBackground"/>
+
+</RelativeLayout>

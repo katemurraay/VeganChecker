@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+<!-- Code is based on:
+ Web Article: "Custom buttons in Android - 13 techniques to style your buttons",
+Code Brainer,
+https://www.codebrainer.com/blog/13-designs-for-buttons-every-android-beginner-should-know -->
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white" />
+            <stroke android:width="5px" android:color=" #8c8c8c" android:dashGap="3dp" android:dashWidth="3dp" />
+        </shape>
+    </item>
+
+    <item android:state_pressed="true" >
+        <shape  android:shape="rectangle">
+            <solid android:color="@android:color/white" />
+            <stroke android:width="5px" android:color=" #8c8c8c" android:dashGap="5dp" android:dashWidth="5dp" />
+        </shape>
+    </item>
+
+    <!--END-->
+</selector>

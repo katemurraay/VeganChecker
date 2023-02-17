@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/search"
+    tools:context=".features.Searching.SearchFragment">
+
+    <LinearLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation"
+        android:background="#00FFFFFF"
+        android:layout_margin="10sp"
+        android:orientation="vertical"
+        tools:ignore="UnknownIdInLayout,UselessParent">
+
+
+
+
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:textSize="20sp"
+            android:layout_marginTop="10sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:text="@string/tv_find"/>
+
+
+
+
+
+
+<AutoCompleteTextView
+            android:drawableEnd="@drawable/search"
+            android:layout_marginTop="30sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_bar"
+            android:imeOptions="actionDone"
+            tools:ignore="LabelFor"
+            android:textSize="14sp"
+            android:hint="@string/search_bar"
+            android:inputType="textAutoComplete"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/btnFood"
+        android:layout_height="wrap_content"
+        android:layout_width="270sp"
+        android:background="@android:color/transparent"
+        android:text="@string/btn_food"
+        android:layout_marginTop="10sp"
+        android:textAlignment="textStart"
+        android:textSize="14sp"
+        android:padding="2sp"
+        android:drawablePadding="30sp"
+        android:drawableStart="@drawable/ic_dish"
+        tools:ignore="RtlSymmetry" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:id="@+id/ibFood"
+        android:visibility="invisible"
+        android:padding="2sp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_arrow_up"
+        android:contentDescription="@string/btn_food" />
+</LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:id="@+id/lvFood"
+
+            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnAlcohol"
+            android:layout_height="wrap_content"
+            android:layout_width="270sp"
+            android:textSize="14sp"
+            android:background="@android:color/transparent"
+            android:text="@string/btn_alcohol"
+            android:layout_marginTop="20sp"
+            android:textAlignment="textStart"
+            android:padding="2sp"
+            android:drawablePadding="30sp"
+            android:drawableStart="@drawable/ic_wine"
+
+            tools:ignore="RtlSymmetry" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:id="@+id/ibAlcohol"
+            android:visibility="invisible"
+            android:padding="2sp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_up"
+            android:contentDescription="@string/btn_alcohol" />
+    </LinearLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:id="@+id/lvAlcohol"
+
+            />
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="270sp"
+            android:background="@android:color/transparent"
+            android:text="@string/btn_cosmetics"
+            android:layout_marginTop="20sp"
+            android:padding="2sp"
+            android:textSize="14sp"
+            android:textAlignment="textStart"
+            android:drawablePadding="30sp"
+            android:visibility="invisible"
+            android:drawableStart="@drawable/ic_cosmetics"
+            android:id="@+id/btnCosmetics"
+            tools:ignore="RtlSymmetry" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

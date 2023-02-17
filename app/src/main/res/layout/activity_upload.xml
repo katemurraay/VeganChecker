@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colour_white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ToolbarTheme"
+        app:title="@string/tv_upload"
+        app:titleMargin="16sp"
+        app:titleTextColor="@color/colorPrimary"
+        android:id="@+id/tbUpload"/>
+
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="3dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutStep1"
+        android:padding="2sp"
+        android:layout_margin="16sp"
+        android:visibility="visible">
+        <EditText
+            android:layout_marginTop="15sp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/et_barcode"
+            android:background="@drawable/bg_edittext"
+            android:id="@+id/etBarcode"
+            android:inputType="number"
+            android:maxLines="1"
+            android:layout_marginBottom="10sp"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no" />
+
+        <com.tiper.MaterialSpinner
+            android:id="@+id/spCategory"
+            android:layout_marginTop="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foregroundTint="@color/colorPrimary"
+            app:spinnerMode="dropdown"
+            android:hint="@string/tv_category"
+            />
+        <Button
+            android:layout_marginTop="60sp"
+            android:id="@+id/btnStep1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/btn_continue"
+            android:background="@drawable/btn_shape"
+            android:textColor="@color/colorPrimary"
+            />
+
+    </LinearLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutStep2"
+    android:visibility="gone">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="16sp"
+
+
+    >
+
+    <Button
+
+        android:id ="@+id/btnUploadIngredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_image"
+        android:textColor="@color/title_colour"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/btn_upload"
+        android:padding="10sp"
+        android:text="@string/btn_ingreds"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxHeight="100sp"
+        android:id="@+id/ivPreview"
+       android:layout_marginTop="10sp"
+        android:contentDescription="@string/tv_result" />
+
+    <EditText
+        android:layout_marginTop="20sp"
+        android:id="@+id/etResultIngredients"
+        android:autoLink="all"
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLines ="10"
+        android:maxLength ="2000"
+
+        android:background="@drawable/bg_edittext"
+        android:textColor="@android:color/darker_gray"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="@string/tv_result"
+        android:importantForAutofill="no"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_shape"
+        android:layout_marginTop="15sp"
+        android:layout_margin="16sp"
+        android:id="@+id/btnStep2"
+        android:text ="@string/btn_continue"
+        android:textColor="@color/colorPrimary"
+        />
+</LinearLayout>
+</ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layoutStep3"
+        android:padding="2sp"
+        android:layout_margin="16sp"
+        android:visibility="gone"
+      >
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_brand"
+        android:background="@drawable/bg_edittext"
+        android:id="@+id/etBrand"
+        android:textSize="18sp"
+        android:layout_marginTop="5sp"
+        android:inputType="textShortMessage"
+        android:maxLines="1"
+        android:importantForAutofill="no" />
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/etName"
+        android:textSize="18sp"
+        android:layout_marginTop="10sp"
+
+        android:background="@drawable/bg_edittext"
+        android:hint="@string/et_pname"
+        android:inputType="textShortMessage"
+        android:maxLines="1"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no" />
+
+    <com.tiper.MaterialSpinner
+        android:layout_marginTop="20sp"
+        android:id="@+id/spType"
+        android:hint="@string/tv_type"
+        app:spinnerMode="dialog"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:padding="2sp"/>
+    <Button
+        android:layout_marginTop="60sp"
+        android:id="@+id/btnStep3"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/btn_continue"
+        android:background="@drawable/btn_shape"
+        android:textColor="@color/colorPrimary"
+       />
+</LinearLayout>
+
+    <ScrollView
+        android:id="@+id/layoutStep4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="1sp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tvVeganSymbol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2sp"
+                android:layout_marginTop="10sp"
+                android:padding="2sp"
+                android:text="@string/vegan_symbol"
+                android:textColor="@color/title_colour" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rdoYesVeganSign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes" />
+
+                <RadioButton
+                    android:id="@+id/rdoNoVeganSign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvAvailableFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:padding="2sp"
+                android:text="@string/cb_availablefrom"
+                android:textColor="@color/title_colour" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:background="@android:color/darker_gray" />
+
+            <CheckBox
+                android:id="@+id/cbDunnes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dunnes" />
+
+            <CheckBox
+                android:id="@+id/cbTesco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tesco" />
+
+            <CheckBox
+                android:id="@+id/cbSupervalu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/supervalu" />
+
+            <CheckBox
+                android:id="@+id/cbLidl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lidl" />
+
+            <CheckBox
+                android:id="@+id/cbAldi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aldi" />
+
+            <CheckBox
+                android:id="@+id/cbHB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hol_bar" />
+
+            <CheckBox
+                android:id="@+id/cbIceland"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/iceland" />
+
+            <CheckBox
+                android:id="@+id/cbOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/other" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etSpecify"
+                android:background="@drawable/bg_edittext"
+                android:hint="@string/specify"
+                android:maxLines="1"
+                android:layout_margin="16sp"
+                android:layout_marginTop="5sp"
+                android:visibility="gone"
+                android:importantForAutofill="no"
+                android:inputType="text" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_shape"
+                android:text="@string/btn_continue"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="15sp"
+                android:padding="10sp"
+                android:id="@+id/btnStep4"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:background="@color/colour_white"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/lottieUploads"
+        app:lottie_autoPlay="true"
+        android:visibility="gone"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading"/>
+
+
+</LinearLayout>

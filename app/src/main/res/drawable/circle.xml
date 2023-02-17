@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--code below is based on:
+ Github Repository: Circular Button with Icon and Text in Android ,
+ Author: pacificregmi
+ https://gist.github.com/pacificregmi/141e2dd1e33bd4a4178f#file-circle-xml -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="1000dp" />
+    <solid android:color=" #1a1a1a" />
+    <stroke
+        android:width="2dip"
+        android:color="	#1a1a1a" />
+    <padding
+        android:bottom="4dp"
+        android:left="4dp"
+        android:right="4dp"
+        android:top="4dp" />
+</shape>
+<!-- END -->

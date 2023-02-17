@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    tools:context=".features.Scanning.ResultActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@color/colour_white">
+
+    <!-- Third Party File used below:
+    Lottie Animation File:  Loading,
+      Teresa LIU,
+https://assets10.lottiefiles.com/packages/lf20_oqLLSt.json -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:background="@color/colour_white"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/lottieLoading"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading"/>
+    <!--END-->
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:id ="@+id/layoutResult"
+    android:visibility="gone"
+     >
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id= "@+id/imgResult"
+    android:layout_marginTop="20sp"
+    android:translationZ="90dp"
+    android:layout_marginBottom="20sp"
+    android:layout_centerHorizontal="true"
+    android:contentDescription="@string/no_results" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvResult"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@id/imgResult"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvContains"
+        android:textSize="16sp"
+        android:layout_below="@+id/tvResult"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvName"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/tvContains"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:id="@+id/tvIngredients"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/tvName"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/tvIngredients"
+        android:id="@+id/tvProduction"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvValidatedBy"
+        android:textColor="@color/title_colour"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvProduction"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"/>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btnViewAlternatives"
+    android:layout_below="@+id/tvValidatedBy"
+    android:background="@drawable/btn_shape"
+    android:textColor="@color/colorPrimary"
+    android:text="@string/btn_alternatives"
+    android:visibility="visible"/>
+
+
+</RelativeLayout>
+
+</RelativeLayout>
+
+
